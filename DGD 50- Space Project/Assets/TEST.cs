@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class TEST : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    
+    void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Benis");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log(collision.collider.name);
     }
 }

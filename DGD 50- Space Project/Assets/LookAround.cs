@@ -8,7 +8,14 @@ public class LookAround : MonoBehaviour
     public int Speed;
     public int Velo;
 
+    public int speed;
+    public int velo;
+
+    public float xAngle , yAngle , zAngle;
+
     public Vector3 SquareDirection;
+    Vector3 newRotation =  new Vector3(0 ,10 , 0);
+
 
 
     float xMouse = 0 ;

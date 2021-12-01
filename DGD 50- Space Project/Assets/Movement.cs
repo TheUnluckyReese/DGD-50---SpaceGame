@@ -21,11 +21,7 @@
         {
             transform.Translate(SquareDirection *speed *Time.deltaTime);
 
-            //transform.position = newPosition;
-            //transform.eulerAngles = newRotation;
-
-           // Quaternion objectRotation = otherObject.transform.rotation;
-            //transform.rotation = objectRotation;
+            
 
             if(Input.GetKeyDown(KeyCode.A))
             {
