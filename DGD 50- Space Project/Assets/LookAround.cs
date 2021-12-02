@@ -5,13 +5,7 @@ using UnityEngine;
 public class LookAround : MonoBehaviour
 {
     public Transform player;
-    public int Speed;
-    public int Velo;
-
-    public int speed;
-    public int velo;
-
-    public float xAngle , yAngle , zAngle;
+    
 
     public Vector3 SquareDirection;
     Vector3 newRotation =  new Vector3(0 ,10 , 0);
@@ -31,8 +25,7 @@ public class LookAround : MonoBehaviour
     void Update()
     {
 
-        transform.Translate(SquareDirection * Speed * Time.deltaTime);
-
+        
         xMouse += Input.GetAxis("Mouse X") * Sensitivity ;
         yMouse += Input.GetAxis("Mouse Y") * Sensitivity ;
 
