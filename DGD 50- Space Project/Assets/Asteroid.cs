@@ -5,10 +5,12 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour
 {
     public int asteroidHealth = 5;
+    public float enemSpawnTime, enemMax, enemMin;
 
     public Vector3 spaceMin;
     public Vector3 spaceMax;
 
+    public GameObject enemy;
 
     public float xAxis, yAxis, zAxis;
 
@@ -30,6 +32,11 @@ public class Asteroid : MonoBehaviour
         zAxis = UnityEngine.Random.Range(spaceMin.z , spaceMax.z);
 
         randomPos = new Vector3(xAxis , yAxis, zAxis);
+ 
+
+        //instantiate enemies 
+        
+        
     }
 
     void setRange()

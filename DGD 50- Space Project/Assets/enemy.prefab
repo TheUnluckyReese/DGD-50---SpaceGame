@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 9121972012832663265}
   - component: {fileID: 6145268511575625027}
   - component: {fileID: 4144777540456864201}
-  - component: {fileID: 2136351920526438370}
   - component: {fileID: -6234699441255044178}
+  - component: {fileID: 2136351920526438370}
   m_Layer: 0
   m_Name: enemy
   m_TagString: playerBull
@@ -98,19 +98,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2136351920526438370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7589200330131140820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 995e9ef3d1d9d854eb67662b37436fb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shootSpeed: 0
 --- !u!54 &-6234699441255044178
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -127,3 +114,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 0
+--- !u!114 &2136351920526438370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7589200330131140820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995e9ef3d1d9d854eb67662b37436fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootSpeed: 0

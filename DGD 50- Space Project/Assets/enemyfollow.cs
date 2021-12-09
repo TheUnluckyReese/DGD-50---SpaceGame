@@ -6,13 +6,14 @@ public class enemyfollow : MonoBehaviour
 {  
  
 
-    //public Transform player;
+    public Transform player;
 
     public float shootSpeed ;
 
     void Update()
     {
-       /*
+        player = GameObject.Find("PlayerModel");
+       
         transform.LookAt(player.position);
 
         transform.Rotate(new Vector3(0, -90, 0), Space.Self);
@@ -24,11 +25,11 @@ public class enemyfollow : MonoBehaviour
             Debug.Log("I'm hit");
 
 
-            //transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
+            transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
 
         }
 
-        */ 
+        
 
     }
 
