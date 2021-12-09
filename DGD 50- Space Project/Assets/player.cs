@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
-   public Rigidbody rb;
+  //public Rigidbody rb;
 
    public int imHit;
+   public Movement moving;
 
    public int pHealth, pHealthMax, pHealthMin;
    public int pAmmo, pAmmoMAX , pAmmoMIN;
@@ -20,11 +21,38 @@ public class player : MonoBehaviour
 
    void Update()
    {
+
+       //healing 
        if(pHealthMax == pHealth)
        {
            //speed up if you gained max health
            Debug.Log("FEVERRRR");
        }
+
+       //speed 
+       if(Input.GetKeyDown(KeyCode.A))
+       {
+           moving.speed --;
+       }
+
+       if(Input.GetKeyDown(KeyCode.D))
+       {
+           moving.speed ++;
+       }
+
+       //height
+
+       if(Input.GetKeyDown(KeyCode.W))
+       {
+           moving.Height ++;
+       }
+
+       if(Input.GetKeyDown(KeyCode.S))
+       {
+           moving.Height --;
+       }
+
+       //shooting
 
        if(Input.GetKeyDown(KeyCode.Space))
        {
@@ -40,9 +68,10 @@ public class player : MonoBehaviour
 
        if(pAmmo <= pAmmoMIN)
        {
-           Debug.Log("Please Reload");
+          
        }
 
+       
        
 
    }
@@ -54,7 +83,7 @@ public class player : MonoBehaviour
 
        if(collision.gameObject.tag == "Asteroid") 
        {
-           Debug.Log("Ouch");
+           //Destroy(collision.gameObject);
 
            pHealth --;
 

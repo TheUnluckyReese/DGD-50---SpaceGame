@@ -7,10 +7,11 @@
         public int speed;
         public int velo;
 
-        public float xAngle , yAngle , zAngle;
+        public int Height;
 
         public Vector3 SquareDirection;
-        Vector3 newRotation =  new Vector3(0 ,10 , 0);
+
+        //public Vector3 newRotation =  new Vector3(0 ,10 , 0);
 
         void Start()
         {
@@ -19,18 +20,10 @@
 
         void Update()
         {
-            transform.Translate(SquareDirection *speed *Time.deltaTime);
 
-            
+            SquareDirection = new Vector3 (0 , Height , 10);
 
-            if(Input.GetKeyDown(KeyCode.A))
-            {
-                Debug.Log("RotateLeft");  
-            }
+            transform.Translate(SquareDirection *speed *Time.deltaTime);    
 
-            if(Input.GetKeyDown(KeyCode.D))
-            {
-                Debug.Log("RotateRight");   
-            }
         }
     }
