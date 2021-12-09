@@ -64,6 +64,7 @@ public class Asteroid : MonoBehaviour
         if(collision.gameObject.tag == "playerBull")
         {
             asteroidHealth --;
+            Debug.Log("Asteroid Health");
         }
     }
    

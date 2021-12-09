@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class player : MonoBehaviour
 {
   //public Rigidbody rb;
+
+  public TextMeshProUGUI bulletText;
+  public TextMeshProUGUI healthText;
 
    public int imHit;
    public Movement moving;
@@ -15,12 +19,14 @@ public class player : MonoBehaviour
 
    void Start()
    {
-       Debug.Log("We are running");
+    
    }
    
 
    void Update()
    {
+       bulletText.text = ( "." + pAmmo);
+       healthText.text = ( "." +pHealth );
 
        //healing 
        if(pHealthMax == pHealth)
@@ -56,7 +62,7 @@ public class player : MonoBehaviour
 
        if(Input.GetKeyDown(KeyCode.Space))
        {
-           Debug.Log("Pew Pew" );
+           //Debug.Log("Pew Pew" );
            pAmmo --;
        }
 
