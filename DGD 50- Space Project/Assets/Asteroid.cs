@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    public int asteroidHealth = 5;
-    public float enemSpawnTime, enemMax, enemMin;
+    int asteroidHealth = 5;
+    
 
     public Vector3 spaceMin;
     public Vector3 spaceMax;
 
     public GameObject enemy;
+    int  enemSpawnTime, enemMax, enemMin;
+    float bullSpeed;
 
     public float xAxis, yAxis, zAxis;
 
@@ -34,7 +36,10 @@ public class Asteroid : MonoBehaviour
         randomPos = new Vector3(xAxis , yAxis, zAxis);
  
 
-        //instantiate enemies 
+       //instantiate enemies 
+
+
+
         
         
     }
@@ -47,13 +52,7 @@ public class Asteroid : MonoBehaviour
 
     }
 
-    void Instantiate()
-    {
-        if(isHit == true )
-        {
-            Instantiate(gameObject , randomPos , Quaternion.identity);
-        }
-    }
+
 
 
     void OnCollisionEnter(Collision collision)
@@ -61,7 +60,7 @@ public class Asteroid : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             Debug.Log("relocate");
-            Instantiate();
+           
 
             //y axis 1260 - 0 
             //x axis -260 - 0;

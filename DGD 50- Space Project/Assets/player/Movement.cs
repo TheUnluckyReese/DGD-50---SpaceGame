@@ -6,7 +6,7 @@
     {
         float xMouse = 0;
         float yMouse = 0;
-        public int speed, velo , height;
+        public int speed ;
         public int playZ ;
 
         public Vector3 SquareDirection;
@@ -14,7 +14,9 @@
 
         void Update()
         { 
-        
+
+            if(Input.GetMouseButton(1))
+            {
             xMouse += Input.GetAxis("Mouse X") * speed;
             yMouse -= Input.GetAxis("Mouse Y") * speed;
 
@@ -23,6 +25,15 @@
             SquareDirection = new Vector3 (xMouse, yMouse , playZ);
 
             transform.Translate(SquareDirection *speed *Time.deltaTime);
+
+            }
+
+            if(Input.GetKeyUp(KeyCode.Space))
+            {
+
+            }
+        
+            
         }
 
          

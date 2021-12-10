@@ -5,17 +5,20 @@ using UnityEngine;
 public class playerbullets : MonoBehaviour
 {
     public GameObject lasers;
-    public float speed;
+    public float speed = 100f;
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetMouseButtonDown(0))
         {
-            GameObject laserAppear = Instantiate(lasers, transform.position , Quaternion.identity);
+            GameObject laserAppear = Instantiate(lasers, transform.position , Quaternion.identity) as GameObject;
 
             Rigidbody laserAppearRB = laserAppear.GetComponent<Rigidbody>();
+            lasers.transform.position = transform.position +Camera.main.transform.forward *2;
 
-            laserAppearRB.AddForce(gameObject.transform.forward * speed);
+            laserAppearRB.AddForce(Vector3.forward* speed);
+            //laserAppearRB.velocity = Camera.main.transform.forward * 40;
+
             Destroy(laserAppear , 3f );
 
 

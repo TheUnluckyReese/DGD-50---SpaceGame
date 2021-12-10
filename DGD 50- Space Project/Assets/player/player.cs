@@ -11,16 +11,12 @@ public class player : MonoBehaviour
   public TextMeshProUGUI healthText;
 
    public int imHit;
+   public Movement moving;
   
    int pHealth, pHealthMax, pHealthMin;
    int pAmmo, pAmmoMAX , pAmmoMIN;
 
 
-   void Start()
-   {
-    
-   }
-   
 
    void Update()
    {
@@ -34,7 +30,17 @@ public class player : MonoBehaviour
            Debug.Log("FEVERRRR");
        }
 
-      
+       //speed move
+
+       if(Input.GetKeyDown(KeyCode.W))
+       {
+           moving.speed --;
+       }
+
+       if(Input.GetKeyDown(KeyCode.S))
+       {  
+           moving.speed ++;
+       }     
      
 
        //shooting
@@ -55,6 +61,8 @@ public class player : MonoBehaviour
        {
           
        }
+
+       
 
        
        

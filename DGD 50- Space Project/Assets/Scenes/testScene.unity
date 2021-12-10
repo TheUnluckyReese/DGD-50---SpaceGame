@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -147,13 +147,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14941077}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.502}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.02, y: 0, z: -1.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1909444875}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!114 &14941079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,8 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20092f6d7cdd1624cad3fc465ced0b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lasers: {fileID: 0}
-  speed: 8
+  lasers: {fileID: 2090338251931653458, guid: b3785cd41ce609c4ca2c9cf0a12eff4a, type: 3}
+  speed: 500
 --- !u!1 &69921857
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,8 +420,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283684910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2759.4592, y: 0.83172, z: 3524.2148}
+  m_LocalPosition: {x: 0, y: -4647, z: 0}
+  m_LocalScale: {x: 13801.436, y: 4.1598477, z: 17626.361}
   m_Children: []
   m_Father: {fileID: 1363194557}
   m_RootOrder: 0
@@ -5385,8 +5385,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545468914}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1290, y: 353, z: 0}
-  m_LocalScale: {x: 2759.4592, y: -3.3174815, z: 3524.2148}
+  m_LocalPosition: {x: -3183, y: 353, z: 0}
+  m_LocalScale: {x: 10957.8125, y: -13.173719, z: 13994.657}
   m_Children: []
   m_Father: {fileID: 1363194557}
   m_RootOrder: 3
@@ -5602,7 +5602,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &573889333
 Transform:
   m_ObjectHideFlags: 0
@@ -5744,8 +5744,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666409486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1888, z: 0}
-  m_LocalScale: {x: 2759.4592, y: 0.83172, z: 3524.2148}
+  m_LocalPosition: {x: 0, y: 4176, z: 0}
+  m_LocalScale: {x: 12814.376, y: 3.8623412, z: 16365.748}
   m_Children: []
   m_Father: {fileID: 1363194557}
   m_RootOrder: 1
@@ -5849,10 +5849,10 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.33962262, g: 0.08170166, b: 0.33962262, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 50
@@ -5864,14 +5864,14 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 26.991467
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -5890,7 +5890,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709735641}
   m_LocalRotation: {x: -0, y: 0.9954145, z: -0.09565524, w: 0}
-  m_LocalPosition: {x: 0.04, y: 0.7, z: 1.05}
+  m_LocalPosition: {x: 0.04, y: 0.94, z: 0.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1909444875}
@@ -5937,8 +5937,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746557554}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1387, y: 353, z: 0}
-  m_LocalScale: {x: 2759.4592, y: 0.83172, z: 3524.2148}
+  m_LocalPosition: {x: 5474, y: 353, z: 3410}
+  m_LocalScale: {x: 9502.478, y: 2.8641121, z: 32830.28}
   m_Children: []
   m_Father: {fileID: 1363194557}
   m_RootOrder: 4
@@ -6032,8 +6032,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843392728}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 65, y: 457, z: -1630}
-  m_LocalScale: {x: 2759.4592, y: 0.83172, z: 3524.2148}
+  m_LocalPosition: {x: 65, y: 457, z: -7023}
+  m_LocalScale: {x: 12742.906, y: 3.8407996, z: 16274.472}
   m_Children: []
   m_Father: {fileID: 1363194557}
   m_RootOrder: 5
@@ -6348,10 +6348,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde1bc263fb397244949711e12ca794c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidHealth: 0
-  enemSpawnTime: 0
-  enemMax: 0
-  enemMin: 0
   spaceMin: {x: 0, y: 0, z: 0}
   spaceMax: {x: 0, y: 0, z: 0}
   enemy: {fileID: 7589200330131140820, guid: 286eb1ffc54a2244a844c48ab91d3089, type: 3}
@@ -6604,10 +6600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde1bc263fb397244949711e12ca794c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidHealth: 0
-  enemSpawnTime: 0
-  enemMax: 0
-  enemMin: 0
   spaceMin: {x: 0, y: 0, z: 0}
   spaceMax: {x: 0, y: 0, z: 0}
   enemy: {fileID: 7589200330131140820, guid: 286eb1ffc54a2244a844c48ab91d3089, type: 3}
@@ -6799,10 +6791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde1bc263fb397244949711e12ca794c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidHealth: 0
-  enemSpawnTime: 0
-  enemMax: 0
-  enemMin: 0
   spaceMin: {x: 0, y: 0, z: 0}
   spaceMax: {x: 0, y: 0, z: 0}
   enemy: {fileID: 7589200330131140820, guid: 286eb1ffc54a2244a844c48ab91d3089, type: 3}
@@ -7088,7 +7076,7 @@ Transform:
   m_GameObject: {fileID: 1363194556}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.257257, y: -321, z: 13.730586}
-  m_LocalScale: {x: 0.56151706, y: 0.56151706, z: 0.56151706}
+  m_LocalScale: {x: 0.13395551, y: 0.13395551, z: 0.13395551}
   m_Children:
   - {fileID: 283684911}
   - {fileID: 666409487}
@@ -7207,10 +7195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde1bc263fb397244949711e12ca794c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidHealth: 0
-  enemSpawnTime: 0
-  enemMax: 0
-  enemMin: 0
   spaceMin: {x: 0, y: 0, z: 0}
   spaceMax: {x: 0, y: 0, z: 0}
   enemy: {fileID: 7589200330131140820, guid: 286eb1ffc54a2244a844c48ab91d3089, type: 3}
@@ -7265,10 +7249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde1bc263fb397244949711e12ca794c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidHealth: 0
-  enemSpawnTime: 0
-  enemMax: 0
-  enemMin: 0
   spaceMin: {x: 0, y: 0, z: 0}
   spaceMax: {x: 0, y: 0, z: 0}
   enemy: {fileID: 7589200330131140820, guid: 286eb1ffc54a2244a844c48ab91d3089, type: 3}
@@ -7447,10 +7427,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde1bc263fb397244949711e12ca794c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidHealth: 0
-  enemSpawnTime: 0
-  enemMax: 0
-  enemMin: 0
   spaceMin: {x: 0, y: 0, z: 0}
   spaceMax: {x: 0, y: 0, z: 0}
   enemy: {fileID: 7589200330131140820, guid: 286eb1ffc54a2244a844c48ab91d3089, type: 3}
@@ -7505,10 +7481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde1bc263fb397244949711e12ca794c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidHealth: 0
-  enemSpawnTime: 0
-  enemMax: 0
-  enemMin: 0
   spaceMin: {x: 0, y: 0, z: 0}
   spaceMax: {x: 0, y: 0, z: 0}
   enemy: {fileID: 7589200330131140820, guid: 286eb1ffc54a2244a844c48ab91d3089, type: 3}
@@ -7656,10 +7628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde1bc263fb397244949711e12ca794c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidHealth: 0
-  enemSpawnTime: 0
-  enemMax: 0
-  enemMin: 0
   spaceMin: {x: 0, y: 0, z: 0}
   spaceMax: {x: 0, y: 0, z: 0}
   enemy: {fileID: 7589200330131140820, guid: 286eb1ffc54a2244a844c48ab91d3089, type: 3}
@@ -7776,10 +7744,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde1bc263fb397244949711e12ca794c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidHealth: 0
-  enemSpawnTime: 0
-  enemMax: 0
-  enemMin: 0
   spaceMin: {x: 0, y: 0, z: 0}
   spaceMax: {x: 0, y: 0, z: 0}
   enemy: {fileID: 7589200330131140820, guid: 286eb1ffc54a2244a844c48ab91d3089, type: 3}
@@ -7980,6 +7944,7 @@ GameObject:
   - component: {fileID: 1909444881}
   - component: {fileID: 1909444880}
   - component: {fileID: 1909444879}
+  - component: {fileID: 1909444882}
   m_Layer: 0
   m_Name: playerModel
   m_TagString: Player
@@ -7995,7 +7960,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909444874}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.98, y: -2.62, z: 65.71}
+  m_LocalPosition: {x: -18.98, y: -2.62, z: 71.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 709735644}
@@ -8079,7 +8044,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 14
   m_CollisionDetection: 0
 --- !u!114 &1909444880
 MonoBehaviour:
@@ -8094,8 +8059,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  velo: 0
-  height: 0
   playZ: 10
   SquareDirection: {x: 0, y: 0, z: 0}
 --- !u!114 &1909444881
@@ -8113,6 +8076,21 @@ MonoBehaviour:
   bulletText: {fileID: 933432950}
   healthText: {fileID: 546751698}
   imHit: 0
+  moving: {fileID: 1909444880}
+--- !u!114 &1909444882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909444874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20092f6d7cdd1624cad3fc465ced0b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lasers: {fileID: 2090338251931653458, guid: b3785cd41ce609c4ca2c9cf0a12eff4a, type: 3}
+  speed: -100
 --- !u!1 &1958661777
 GameObject:
   m_ObjectHideFlags: 0
@@ -8137,7 +8115,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958661777}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
@@ -8314,10 +8292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde1bc263fb397244949711e12ca794c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidHealth: 0
-  enemSpawnTime: 0
-  enemMax: 0
-  enemMin: 0
   spaceMin: {x: 0, y: 0, z: 0}
   spaceMax: {x: 0, y: 0, z: 0}
   enemy: {fileID: 7589200330131140820, guid: 286eb1ffc54a2244a844c48ab91d3089, type: 3}
@@ -8428,8 +8402,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023581317}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 149, z: 1747}
-  m_LocalScale: {x: 2759.4592, y: 0.83172, z: 3524.2148}
+  m_LocalPosition: {x: 0, y: 149, z: 9607}
+  m_LocalScale: {x: 12149.071, y: 3.6618135, z: 15516.061}
   m_Children: []
   m_Father: {fileID: 1363194557}
   m_RootOrder: 2
