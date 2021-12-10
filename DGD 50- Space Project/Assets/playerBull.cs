@@ -10,7 +10,7 @@ public class playerBull : MonoBehaviour
 
     public void update()
     {
-        transform.Translate(player.SquareDirection * speed * Time.deltaTime);
+       //transform.Translate(player.SquareDirection * speed * Time.deltaTime);
 
     }
     

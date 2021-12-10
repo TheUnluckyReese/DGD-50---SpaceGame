@@ -12,6 +12,7 @@ public class enemyfollow : MonoBehaviour
 
     void Update()
     {
+        /*
         player = GameObject.Find("PlayerModel");
        
         transform.LookAt(player.position);
@@ -29,7 +30,7 @@ public class enemyfollow : MonoBehaviour
 
         }
 
-        
+        */
 
     }
 

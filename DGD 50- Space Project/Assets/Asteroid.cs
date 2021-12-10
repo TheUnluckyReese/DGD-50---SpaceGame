@@ -49,7 +49,7 @@ public class Asteroid : MonoBehaviour
 
     void Instantiate()
     {
-        if(isHit = true )
+        if(isHit == true )
         {
             Instantiate(gameObject , randomPos , Quaternion.identity);
         }

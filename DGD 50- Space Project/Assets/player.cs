@@ -46,17 +46,7 @@ public class player : MonoBehaviour
            moving.speed ++;
        }
 
-       //height
-
-       if(Input.GetKeyDown(KeyCode.W))
-       {
-           moving.Height ++;
-       }
-
-       if(Input.GetKeyDown(KeyCode.S))
-       {
-           moving.Height --;
-       }
+     
 
        //shooting
 
