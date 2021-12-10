@@ -11,14 +11,15 @@ public class Asteroid : MonoBehaviour
     public Vector3 spaceMax;
 
     public GameObject enemy;
-    int  enemSpawnTime, enemMax, enemMin;
+    public float  enemSpawnTime   =  1 , enemMaxTime = 10 , enemMinTime  = 0;
+    bool spawnEnem;
     float bullSpeed;
 
-    public float xAxis, yAxis, zAxis;
+    float xAxis, yAxis, zAxis;
 
-    public Vector3 randomPos;
+    Vector3 randomPos;
 
-    public bool isHit;
+    bool isHit;
 
     public void Start()
     {
@@ -38,11 +39,33 @@ public class Asteroid : MonoBehaviour
 
        //instantiate enemies 
 
+       enemSpawnTime += Time.deltaTime ;
+
+       if(enemSpawnTime >= enemMaxTime)
+       {
+           Debug.Log("spawn em");
+           InstantiateEnemy();
+           enemSpawnTime = enemMinTime;
+       }
+
 
 
         
         
     }
+
+    void Instantiate()
+    {
+        
+            Instantiate(gameObject , randomPos , Quaternion.identity);
+        
+    }
+
+    void InstantiateEnemy()
+    {
+        Instantiate(enemy , transform.position , Quaternion.identity);
+    }
+
 
     void setRange()
     {
@@ -60,6 +83,8 @@ public class Asteroid : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             Debug.Log("relocate");
+            Destroy(gameObject);
+            Instantiate();
            
 
             //y axis 1260 - 0 
@@ -70,7 +95,7 @@ public class Asteroid : MonoBehaviour
         if(collision.gameObject.tag == "playerBull")
         {
             asteroidHealth --;
-            Debug.Log("Asteroid Health");
+            Debug.Log("Asteroid Health" + asteroidHealth );
         }
     }
    

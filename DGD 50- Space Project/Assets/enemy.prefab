@@ -126,4 +126,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 995e9ef3d1d9d854eb67662b37436fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootSpeed: 0
+  player: {fileID: 0}
+  speed: 0
+  shotTimer: 1
+  shotTimeMax: 5
+  shotTimeMin: 0
+  enemBull: {fileID: 0}
+  bullSpeed: 0

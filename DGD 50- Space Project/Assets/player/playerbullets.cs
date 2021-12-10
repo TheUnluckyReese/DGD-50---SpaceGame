@@ -5,7 +5,7 @@ using UnityEngine;
 public class playerbullets : MonoBehaviour
 {
     public GameObject lasers;
-    public float speed = 100f;
+    public float speed ;
 
     void Update()
     {
