@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 14941078}
-  - component: {fileID: 14941079}
   m_Layer: 0
   m_Name: shooSpawn
   m_TagString: Untagged
@@ -147,27 +146,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14941077}
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.02, y: 0, z: -1.44}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -0.020000458, y: 0, z: -1.4400024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1909444875}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
---- !u!114 &14941079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14941077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20092f6d7cdd1624cad3fc465ced0b03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lasers: {fileID: 2090338251931653458, guid: b3785cd41ce609c4ca2c9cf0a12eff4a, type: 3}
-  speed: 500
 --- !u!1 &69921857
 GameObject:
   m_ObjectHideFlags: 0
@@ -6158,11 +6143,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709735641}
   m_LocalRotation: {x: -0, y: 0.9991881, z: 0.040287342, w: 0}
-  m_LocalPosition: {x: 0.04, y: 0.94, z: 0.49}
+  m_LocalPosition: {x: 0.04, y: 0.93, z: -0.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1909444875}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -4.618, y: 180, z: 0}
 --- !u!114 &709735645
 MonoBehaviour:
@@ -6470,7 +6455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &866802550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8562,8 +8547,8 @@ Transform:
   m_LocalPosition: {x: -18.98, y: -2.62, z: 71.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 709735644}
   - {fileID: 14941078}
+  - {fileID: 709735644}
   m_Father: {fileID: 1722938813}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

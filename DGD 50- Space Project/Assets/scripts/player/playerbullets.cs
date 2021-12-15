@@ -14,9 +14,9 @@ public class playerbullets : MonoBehaviour
             GameObject laserAppear = Instantiate(lasers, transform.position , Quaternion.identity) as GameObject;
 
             Rigidbody laserAppearRB = laserAppear.GetComponent<Rigidbody>();
-            lasers.transform.position = transform.position +Camera.main.transform.forward *2;
+            lasers.transform.position = transform.position + Camera.main.transform.forward *2;
 
-            laserAppearRB.AddForce(Vector3.forward* speed);
+            laserAppearRB.AddForce(-Vector3.forward * speed);
             //laserAppearRB.velocity = Camera.main.transform.forward * 40;
 
             Destroy(laserAppear , 3f );

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class gameManager : MonoBehaviour
@@ -23,5 +24,11 @@ public class gameManager : MonoBehaviour
         timerText.text = ("Time  " + gameTimer);
         scoreText.text = ("Score " + gameScore);
         highScoreText.text = ("High Score" + highScore ) ;
+
+        if(gameTimer >= 120 )
+        {
+            SceneManager.LoadScene("gameOver");
+
+        }
     }
 }
