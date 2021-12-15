@@ -20,8 +20,8 @@ public class gameManager : MonoBehaviour
         gameTimer += Time.deltaTime;
         gameScore ++;
 
-        timerText.text = ("Time" + gameTimer);
-        scoreText.text = ("Score " + scoreText);
-        highScoreText.text = ("High Score" + highScoreText ) ;
+        timerText.text = ("Time  " + gameTimer);
+        scoreText.text = ("Score " + gameScore);
+        highScoreText.text = ("High Score" + highScore ) ;
     }
 }
