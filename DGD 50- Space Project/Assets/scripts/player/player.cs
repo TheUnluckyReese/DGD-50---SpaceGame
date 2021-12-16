@@ -66,7 +66,7 @@ public class player : MonoBehaviour
            pHealth --;
        }
 
-       if(collision.gameObject.tag == "bullet ")
+       if(collision.gameObject.tag == "enemBull")
        {
            Debug.Log("I've been hit");
 

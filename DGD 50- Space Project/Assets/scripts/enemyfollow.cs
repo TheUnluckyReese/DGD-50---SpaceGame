@@ -14,6 +14,7 @@ public class enemyfollow : MonoBehaviour
 
     public GameObject enemBull;
     public float bullSpeed;
+    public int health;
 
     void Start()
     {
@@ -26,11 +27,15 @@ public class enemyfollow : MonoBehaviour
 
         transform.LookAt(player.position);
 
-        transform.Rotate(new Vector3(0, -90, 0), Space.Self);//correcting the original rotation
+        transform.Rotate(new Vector3(0, -90, 0), Space.Self);
 
-        //move towards the player
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
+        
 
-        if (Vector3.Distance(transform.position, player.position) > 5f)
+        if (Vector3.Distance(transform.position, player.position) > 10f)
         {//move if distance from target is greater than 1
 
             transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
@@ -48,6 +53,13 @@ public class enemyfollow : MonoBehaviour
 
            
         }
+
+        
+    }
+    void enemyHit()
+    {
+        health --;
+
     }
 
     void enemyPewPew()
@@ -60,7 +72,6 @@ public class enemyfollow : MonoBehaviour
         bullSpawnRB.AddForce(Vector3.forward * bullSpeed);
 
         Destroy(bullSpawn, 2f);
-
 
 
     }

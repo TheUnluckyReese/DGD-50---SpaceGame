@@ -131,4 +131,5 @@ MonoBehaviour:
   shotTimeMax: 5
   shotTimeMin: 0
   enemBull: {fileID: 8722985126381342408, guid: 045f7b516a2825247ad07cfd43dfa4d3, type: 3}
-  bullSpeed: 10
+  bullSpeed: 300
+  health: 2

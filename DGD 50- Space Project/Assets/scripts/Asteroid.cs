@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    int asteroidHealth = 5;
+    public int asteroidHealth = 5;
     
 
     public Vector3 spaceMin;

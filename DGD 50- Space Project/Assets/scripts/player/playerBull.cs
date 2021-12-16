@@ -16,9 +16,9 @@ public class playerBull : MonoBehaviour
     {        
         if(collision.gameObject.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+           Destroy(collision.gameObject);
 
-            Destroy(gameObject);          
+        Destroy(gameObject);         
 
             
 
