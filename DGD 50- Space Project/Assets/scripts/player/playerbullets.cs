@@ -5,6 +5,7 @@ using UnityEngine;
 public class playerbullets : MonoBehaviour
 {
     public GameObject lasers;
+
     public float speed ;
 
     void Update()
@@ -19,9 +20,14 @@ public class playerbullets : MonoBehaviour
             laserAppearRB.AddForce(-Vector3.forward * speed);
             //laserAppearRB.velocity = Camera.main.transform.forward * 40;
 
-            Destroy(laserAppear , 3f );
+            Destroy(laserAppear , 2f );
 
 
         }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        
     }
 }

@@ -48,6 +48,13 @@ public class Asteroid : MonoBehaviour
            enemSpawnTime = enemMinTime;
        }
 
+       if(asteroidHealth <= 0)
+       {
+
+           Destroy(gameObject);
+           Instantiate();
+       }
+
 
 
         
@@ -82,7 +89,7 @@ public class Asteroid : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            Debug.Log("relocate");
+            
             Destroy(gameObject);
             Instantiate();
            
@@ -95,7 +102,7 @@ public class Asteroid : MonoBehaviour
         if(collision.gameObject.tag == "playerBull")
         {
             asteroidHealth --;
-            Debug.Log("Asteroid Health" + asteroidHealth );
+            
         }
     }
    

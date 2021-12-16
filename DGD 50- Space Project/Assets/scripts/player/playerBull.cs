@@ -4,14 +4,27 @@ using UnityEngine;
 
 public class playerBull : MonoBehaviour
 {
-    public Movement player;
+    private gameManager scores;
 
-    public int speed;
-
-    public void update()
+    void Start()
     {
-       //transform.Translate(player.SquareDirection * speed * Time.deltaTime);
+        scores = GameObject.FindGameObjectWithTag("Manager").GetComponent<gameManager>();
+    }
 
+
+    void OnCollisionEnter(Collision collision)
+    {        
+        if(collision.gameObject.tag == "Enemy")
+        {
+            Destroy(collision.gameObject);
+
+            Destroy(gameObject);          
+
+            
+
+            //IncreaseScores();
+            scores.gameScore += 1000;
+        }
     }
     
 

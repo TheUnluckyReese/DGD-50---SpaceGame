@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - playerBull
   - enemBull
+  - Manager
   layers:
   - Default
   - TransparentFX

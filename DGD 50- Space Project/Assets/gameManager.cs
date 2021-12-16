@@ -6,7 +6,7 @@ using TMPro;
 
 public class gameManager : MonoBehaviour
 {
-    public float gameTimer;
+    public float gameTimer, gameTimeOver;
     public int gameScore;
     public int highScore;
 
@@ -18,14 +18,14 @@ public class gameManager : MonoBehaviour
 
     void Update()
     {
-        gameTimer += Time.deltaTime;
+        gameTimer -= Time.deltaTime;
         gameScore ++;
 
         timerText.text = ("Time  " + gameTimer);
         scoreText.text = ("Score " + gameScore);
         highScoreText.text = ("High Score" + highScore ) ;
 
-        if(gameTimer >= 120 )
+        if(gameTimer <= gameTimeOver)
         {
             SceneManager.LoadScene("gameOver");
 

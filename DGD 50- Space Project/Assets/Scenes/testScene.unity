@@ -6846,7 +6846,7 @@ GameObject:
   - component: {fileID: 777899686}
   m_Layer: 0
   m_Name: MANAGER
-  m_TagString: Untagged
+  m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6863,7 +6863,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 088f2cea371b5af459be0d8eaeba2578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTimer: 0
+  gameTimer: 120
+  gameTimeOver: 0
   gameScore: 0
   highScore: 0
   timerText: {fileID: 691482710}
@@ -9324,7 +9325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lasers: {fileID: 2090338251931653458, guid: b3785cd41ce609c4ca2c9cf0a12eff4a, type: 3}
-  speed: 500
+  speed: 750
 --- !u!82 &1909444883
 AudioSource:
   m_ObjectHideFlags: 0
