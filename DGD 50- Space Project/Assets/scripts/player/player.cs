@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class player : MonoBehaviour
@@ -51,6 +52,11 @@ public class player : MonoBehaviour
        {  
            moving.speed ++;
        }     
+
+       if(pHealth <= 0 )
+       {
+           SceneManager.LoadScene("gameOver");
+       }
      
 
 

@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class enemyfollow : MonoBehaviour
 {  
- 
-
     private Transform player;
+    private player playerHealth;
+    private gameManager score;
+    
 
     public float speed ;
 
@@ -19,6 +20,9 @@ public class enemyfollow : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<player>();
+
+        score = GameObject.FindGameObjectWithTag("Manager").GetComponent<gameManager>();
     }
 
     void Update()
@@ -35,7 +39,7 @@ public class enemyfollow : MonoBehaviour
         }
         
 
-        if (Vector3.Distance(transform.position, player.position) > 10f)
+        if (Vector3.Distance(transform.position, player.position) > 3f)
         {//move if distance from target is greater than 1
 
             transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
@@ -44,10 +48,13 @@ public class enemyfollow : MonoBehaviour
         {
             shotTimer += Time.deltaTime;
 
+
+
             if(shotTimer >= shotTimeMax)
             {
                 enemyPewPew();
                 shotTimer = shotTimeMin;
+                score.gameScore += 500;
 
             }
 
@@ -72,6 +79,7 @@ public class enemyfollow : MonoBehaviour
         bullSpawnRB.AddForce(Vector3.forward * bullSpeed);
 
         Destroy(bullSpawn, 2f);
+
 
 
     }
