@@ -8888,6 +8888,7 @@ MonoBehaviour:
   spaceMin: {x: 0, y: 0, z: 0}
   spaceMax: {x: 0, y: 0, z: 0}
   enemy: {fileID: 7589200330131140820, guid: 286eb1ffc54a2244a844c48ab91d3089, type: 3}
+  scores: {fileID: 777899684}
   enemSpawnTime: 0
   enemMaxTime: 10
   enemMinTime: 0
@@ -10053,6 +10054,7 @@ MonoBehaviour:
   spaceMin: {x: 0, y: 0, z: 0}
   spaceMax: {x: 0, y: 0, z: 0}
   enemy: {fileID: 7589200330131140820, guid: 286eb1ffc54a2244a844c48ab91d3089, type: 3}
+  scores: {fileID: 777899684}
   enemSpawnTime: 0
   enemMaxTime: 10
   enemMinTime: 0

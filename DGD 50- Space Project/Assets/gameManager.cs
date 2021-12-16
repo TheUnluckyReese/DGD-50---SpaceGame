@@ -18,17 +18,35 @@ public class gameManager : MonoBehaviour
 
     void Update()
     {
-        gameTimer -= Time.deltaTime;
+        
         gameScore ++;
+        gameTimer -= Time.deltaTime ;
+        DisplayTime(gameTimer);
 
-        timerText.text = ("Time  " + gameTimer);
+        //timerText.text = ("Time  " + gameTimer);
         scoreText.text = ("Score " + gameScore);
         highScoreText.text = ("High Score" + highScore ) ;
 
+
+        
         if(gameTimer <= gameTimeOver)
         {
             SceneManager.LoadScene("gameOver");
 
         }
+
+        // /string timerText = string.Format("0:00");
     }
+
+    void DisplayTime(float gameTimer)
+    {
+        
+        
+        float minutes = Mathf.FloorToInt(gameTimer / 60); 
+        float seconds = Mathf.FloorToInt(gameTimer % 60);
+
+        timerText.text = string.Format("{0:00}:{1:00}" , minutes , seconds);
+    }
+
+    
 }

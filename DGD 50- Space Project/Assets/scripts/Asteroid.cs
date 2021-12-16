@@ -11,6 +11,7 @@ public class Asteroid : MonoBehaviour
     public Vector3 spaceMax;
 
     public GameObject enemy;
+    public gameManager scores;
     public float  enemSpawnTime   =  1 , enemMaxTime = 10 , enemMinTime  = 0;
     bool spawnEnem;
     float bullSpeed;
@@ -53,6 +54,8 @@ public class Asteroid : MonoBehaviour
 
            Destroy(gameObject);
            Instantiate();
+
+           scores.gameScore += 2000;
        }
 
 
