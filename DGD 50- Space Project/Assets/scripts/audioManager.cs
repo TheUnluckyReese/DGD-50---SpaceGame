@@ -6,14 +6,15 @@ public class audioManager : MonoBehaviour
 {
     public GameObject player;
 
-    public AudioSource playerHear;
+    
 
-    public AudioClip lasers;
-    public AudioClip destroy;
-    public AudioClip hoop;
-
+    
     void Update()
     {
+
+        
+
+        
 
     }
 }

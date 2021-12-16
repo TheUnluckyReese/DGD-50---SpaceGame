@@ -17,10 +17,19 @@ public class player : MonoBehaviour
    int pHealthMax, pHealthMin;
    int pAmmo, pAmmoMAX , pAmmoMIN;
 
+   //public AudioClip lasers;
+   //public AudioClip destroy;
+   //public AudioClip hoop;
+
+   private AudioSource playerHear;
+
 
 
    void Update()
    {
+
+    playerHear = GetComponent<AudioSource>();
+
        bulletText.text = ( "." + pAmmo);
        healthText.text = ( "." +pHealth );
 
@@ -33,61 +42,28 @@ public class player : MonoBehaviour
 
        //speed move
 
-       if(Input.GetKeyDown(KeyCode.W))
+       if(Input.GetKeyDown(KeyCode.S))
        {
            moving.speed --;
        }
 
-       if(Input.GetKeyDown(KeyCode.S))
+       if(Input.GetKeyDown(KeyCode.W))
        {  
            moving.speed ++;
        }     
      
 
-       //shooting
-
-       if(Input.GetKeyDown(KeyCode.Space))
-       {
-           //Debug.Log("Pew Pew" );
-           pAmmo --;
-       }
-
-       if(Input.GetKeyDown(KeyCode.R))
-       {
-           Debug.Log("Ammo now " + pAmmo);
-           pAmmo += pAmmoMAX;
-       }
-
-       if(pAmmo <= pAmmoMIN)
-       {
-          
-       }
-
-       
-
-       
-       
 
    }
 
    void OnCollisionEnter(Collision collision)
    {
 
-       Debug.Log(collision.collider.name);
-
        if(collision.gameObject.tag == "Asteroid") 
        {
            //Destroy(collision.gameObject);
 
            pHealth --;
-
-       }
-
-       if(collision.gameObject.tag == "HealthPack")
-       {
-           Debug.Log("Eat Up");
-
-           pHealth ++;
        }
 
        if(collision.gameObject.tag == "bullet ")
@@ -97,20 +73,13 @@ public class player : MonoBehaviour
            pHealth --;
        }
 
+       if(collision.gameObject.tag == "Hoop")
+       {
+           playerHear.PlayOneShot(playerHear.clip);
+
+       }
+
    }
     
 }
 
- //speed 
-       /*
-       if(Input.GetKeyDown(KeyCode.A))
-       {
-           moving.speed --;
-       }
-
-       if(Input.GetKeyDown(KeyCode.D))
-       {  
-           moving.speed ++;
-       }
-
-       */ //public Movement moving;
