@@ -40,6 +40,7 @@ public class laserPointer : MonoBehaviour
             if(asteroid != null)
             {
                 asteroid.asteroidHealth --;
+                
             }
             
         }

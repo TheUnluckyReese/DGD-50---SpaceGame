@@ -6,6 +6,7 @@ public class Asteroid : MonoBehaviour
 {
     public int asteroidHealth = 5;
     
+    //public AudioSource aestroidAudio;
 
     public Vector3 spaceMin;
     public Vector3 spaceMax;
@@ -29,6 +30,9 @@ public class Asteroid : MonoBehaviour
 
     void Update()
     {
+
+        //aestroidAudio = GetComponent<AudioSource>();
+
         xAxis = UnityEngine.Random.Range(spaceMin.x , spaceMax.x);
 
         yAxis = UnityEngine.Random.Range(spaceMin.y , spaceMax.y);

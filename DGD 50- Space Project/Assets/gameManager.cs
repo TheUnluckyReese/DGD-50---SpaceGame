@@ -14,8 +14,10 @@ public class gameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI highScoreText;
 
-
-
+    void Start()
+    {
+        highScoreText.text = PlayerPrefs.GetInt("High Score", 0).ToString();
+    }
     void Update()
     {
         
@@ -23,9 +25,11 @@ public class gameManager : MonoBehaviour
         gameTimer -= Time.deltaTime ;
         DisplayTime(gameTimer);
 
+        PlayerPrefs.SetInt("HighScore", gameScore);
+
         //timerText.text = ("Time  " + gameTimer);
-        scoreText.text = ("Score " + gameScore);
-        highScoreText.text = ("High Score" + highScore ) ;
+        scoreText.text = gameScore.ToString();
+        
 
 
         
