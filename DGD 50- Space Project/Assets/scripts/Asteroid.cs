@@ -13,7 +13,7 @@ public class Asteroid : MonoBehaviour
 
     public GameObject enemy;
     public gameManager scores;
-    public float  enemSpawnTime   =  1 , enemMaxTime = 10 , enemMinTime  = 0;
+    public float  enemSpawnTime   =  1 , enemMaxTime = 45 , enemMinTime  = 0;
     bool spawnEnem;
     float bullSpeed;
 
