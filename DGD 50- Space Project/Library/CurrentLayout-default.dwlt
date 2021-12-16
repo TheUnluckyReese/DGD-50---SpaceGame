@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1500
     height: 918
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 16652
+  controlID: 5503
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 16690
+  controlID: 5504
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 16658
+  controlID: 5505
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 333, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 16691
+  controlID: 5484
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -298,12 +298,12 @@ MonoBehaviour:
     height: 362
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
   - {fileID: 14}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -447,9 +447,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e83f0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 1aeaffffc6f9ffff54fbffffc03e000090400000ca4000005e440000aa440000064500000a4500005c450000c0450000de4500000046000056460000
+      m_SelectedIDs: 883e0000
+      m_LastClickedID: 16008
+      m_ExpandedIDs: 54fbffff503f0000723f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -509,9 +509,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -369.631, y: -9.827296, z: 205.89531}
+    m_Target: {x: 577, y: 320, z: 0}
     speed: 2
-    m_Value: {x: -369.631, y: -9.827296, z: 205.89531}
+    m_Value: {x: 577, y: 320, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -558,13 +558,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.0013845862, y: 0.97188234, z: -0.003679723, w: 0.23596294}
+    m_Target: {x: -0.039467026, y: 0.06799663, z: 0.0031914418, w: 0.9970297}
     speed: 2
-    m_Value: {x: 0.0013845862, y: 0.97188234, z: -0.003679723, w: 0.23596294}
+    m_Value: {x: -0.039461903, y: 0.0679878, z: 0.0031910276, w: 0.9969003}
   m_Size:
-    m_Target: 7.291475
+    m_Target: 720.51227
     speed: 2
-    m_Value: 7.635052
+    m_Value: 720.51227
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -652,13 +652,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/materials
+    - Assets/sounds/arcadeGameSounds
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/materials
+  - Assets/sounds/arcadeGameSounds
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\LilOt\Documents\GitHub\DGD-50---SpaceGame\DGD 50- Space
     Project
@@ -666,9 +666,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6e400000
-    m_LastClickedID: 16494
-    m_ExpandedIDs: 000000005440000056400000584000005a4000005c40000000ca9a3b
+    m_SelectedIDs: 86460000
+    m_LastClickedID: 18054
+    m_ExpandedIDs: 00000000724000007440000076400000784000007a4000008246000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -696,7 +696,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 28400000
     m_LastClickedID: 16424
-    m_ExpandedIDs: 000000005440000056400000584000005a4000005c40000000ca9a3b
+    m_ExpandedIDs: 00000000724000007440000076400000784000007a40000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

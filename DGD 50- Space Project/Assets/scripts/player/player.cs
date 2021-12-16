@@ -13,7 +13,8 @@ public class player : MonoBehaviour
    public int imHit;
    public Movement moving;
   
-   int pHealth, pHealthMax, pHealthMin;
+   public int pHealth;
+   int pHealthMax, pHealthMin;
    int pAmmo, pAmmoMAX , pAmmoMIN;
 
 
